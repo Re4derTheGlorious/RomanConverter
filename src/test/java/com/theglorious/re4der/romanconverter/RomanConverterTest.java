@@ -19,9 +19,7 @@ public class RomanConverterTest extends TestCase {
             Map<Integer, String> testData = new HashMap<>();
             while(scan.hasNext()){
                 String[] line = scan.nextLine().split(",");
-                int key = Integer.valueOf(line[0]);
-                String value = line[1];
-                testData.put(key, value);
+                testData.put(Integer.valueOf(line[0]), line[1]);
             }
             
             //test - comparing conversion results with a chart of valid results
